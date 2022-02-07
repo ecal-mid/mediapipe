@@ -1,0 +1,36 @@
+{
+  "name": "@ecal-mid/mediapipe",
+  "version": "0.0.1",
+  "description": "",
+  "main": "umd/index.js",
+  "type": "module",
+  "files": [
+    "README.md",
+    "umd/ecalmid-mediapipe.js",
+    "package.json"
+  ],
+  "scripts": {
+    "build": "webpack --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Matoseb/musee-de-la-main-2022-scripts.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Matoseb/musee-de-la-main-2022-scripts/issues"
+  },
+  "homepage": "https://github.com/Matoseb/musee-de-la-main-2022-scripts#readme",
+  "dependencies": {
+    "@mediapipe/pose": "^0.5.1635988162"
+  },
+  "devDependencies": {
+    "webpack": "^5.68.0",
+    "webpack-cli": "^4.9.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
