@@ -31,6 +31,7 @@ module.exports = {
   output: {
     filename: 'index.js',
     path: path.resolve(__dirname, 'umd'),
+    publicPath: "/",
     library: 'Test',
     libraryTarget: 'umd',
     clean: true

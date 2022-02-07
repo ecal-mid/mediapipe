@@ -3,11 +3,13 @@ import { POSE_LANDMARKS, Pose } from "@mediapipe/pose";
 import { VideoPlayer } from "../utils/video.js";
 import { lerp } from "../utils/math.js";
 import EventBus from "../utils/event-bus.js";
+import CONFIG from "../config.js";
 
 // const LANDMARK_ENTRIES = Object.entries(window.POSE_LANDMARKS)
 // const LANDMARK_KEYS = ['x', 'y', 'z', 'visibility']
 
 class MediaPipePose extends EventBus {
+  static DEFAULT_CONFIG = CONFIG;
   static POSE_LANDMARKS = POSE_LANDMARKS;
   static LANDMARK_ENTRIES = Object.entries(POSE_LANDMARKS);
   static LANDMARK_KEYS = ["x", "y", "z", "visibility"];
