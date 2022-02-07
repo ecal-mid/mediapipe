@@ -1,6 +1,6 @@
 {
   "name": "@ecal-mid/mediapipe",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "",
   "main": "umd/index.js",
   "files": [
