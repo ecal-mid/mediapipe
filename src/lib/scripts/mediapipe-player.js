@@ -177,7 +177,7 @@ function compress(pose) {
   );
 
   Object.entries(pose).forEach(([key, value]) => {
-    const index = window.POSE_LANDMARKS[key];
+    const index = MediaPipePose.POSE_LANDMARKS[key];
     compressedPose[index] = [value.x, value.y, value.visibility];
   });
 

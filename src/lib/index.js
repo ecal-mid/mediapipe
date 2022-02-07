@@ -1,4 +1,6 @@
-// import "./index.css";
+import "./styles/reset.css";
+import "./styles/main.css";
+
 import _MediaPipePose from "./scripts/mediapipe-pose.js";
 import _MediaPipeClient from "./scripts/mediapipe-client.js";
 import _MediaPipePlayer from "./scripts/mediapipe-player.js";
