@@ -2,7 +2,7 @@
   "name": "@ecal-mid/mediapipe",
   "version": "0.0.2",
   "description": "",
-  "main": "umd/index.js",
+  "main": "umd/ecalmid-mediapipe.js",
   "type": "module",
   "files": [
     "README.md",
