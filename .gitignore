@@ -77,7 +77,3 @@ typings/
 
 # Mac Os
 *.DS_Store
-
-# umd
-dist/
-umd/

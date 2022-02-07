@@ -1,10 +1,9 @@
-import { MediaPipePose, MediaPipeClient, Skeleton } from '~/index.js'
-// import Skeleton from 'https://mediapipe.ecal-mid.ch/scripts/skeleton.js'
-// import MediaPipeClient from 'https://mediapipe.ecal-mid.ch/scripts/mediapipe-client.js'
+import { Skeleton, MediaPipeClient } from '../lib'
 
-const canvas = document.querySelector('.main-canvas')
+const canvas = document.createElement('canvas')
+document.body.appendChild(canvas)
+
 const ctx = canvas.getContext('2d')
-
 const skeleton = new Skeleton()
 const normalSkeleton = new Skeleton()
 
