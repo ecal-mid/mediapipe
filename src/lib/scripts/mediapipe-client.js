@@ -18,8 +18,11 @@ class MediaPipeClient extends EventBus {
     Object.assign(this, defaults, params);
 
     if (window.parent === window) {
-      // check if in iframe
+      // not in iframe
       this.setupLocally();
+    } else {
+      // install on window object
+      window.mediaPipe = this;
     }
   }
 
@@ -41,16 +44,18 @@ class MediaPipeClient extends EventBus {
       width: player.width,
       height: player.height,
       pose,
+      mirrored: CONFIG.selfieMode,
     });
   }
 
-  setup({ stream, width, height, pose }) {
+  setup({ stream, width, height, pose, mirrored }) {
     const { video } = this;
 
     this.stream = stream;
     this.height = height;
     this.width = width;
     this.pose = pose;
+    this.mirrored = mirrored;
 
     video.srcObject = stream;
     video.width = width;
@@ -62,7 +67,7 @@ class MediaPipeClient extends EventBus {
     this.triggerPoseBinded = this.triggerPose.bind(this); //! must bind the function before to have exact copy
     pose.addEventListener("pose", this.triggerPoseBinded);
 
-    super.triggerEventListener("setup");
+    super.triggerEventListener("setup", this);
 
     window.addEventListener("beforeunload", this.destroy.bind(this));
   }
