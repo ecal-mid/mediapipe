@@ -44,7 +44,7 @@ class MediaPipeClient extends EventBus {
       width: player.width,
       height: player.height,
       pose,
-      mirrored: CONFIG.selfieMode,
+      mirrored: CONFIG.mediaPipeOptions.selfieMode,
     });
   }
 
