@@ -1,6 +1,6 @@
 /*!
  * 
- *   @ecal-mid/mediapipe v1.1.3
+ *   @ecal-mid/mediapipe v1.1.4
  *   git+https://github.com/Matoseb/musee-de-la-main-2022-scripts.git
  *
  *   Copyright (c) Sébastien Matos (https://github.com/matoseb) and project contributors.
